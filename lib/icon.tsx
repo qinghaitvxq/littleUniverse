@@ -2,6 +2,7 @@ import React from "react";
 // import "../icons/wechat.svg";
 // import "../icons/donuts.svg";
 import "./importIcons";
+import "./icon.scss";
 
 interface IconProps {
   name: string;
@@ -10,10 +11,15 @@ interface IconProps {
 const Icon: React.FunctionComponent<IconProps> = props => {
   return (
     <span>
-      <svg>
+      <svg className="universe-icon">
         <use xlinkHref={`#${props.name}`} />
       </svg>
     </span>
   );
 };
 export default Icon;
+
+// tree-shaking 技术 基础是静态引入
+// 静态引入 import something from somefile
+// 动态加载 import()
+// 非静态引入 importAll
