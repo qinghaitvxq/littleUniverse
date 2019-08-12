@@ -9,6 +9,7 @@ interface IconProps extends React.SVGAttributes<SVGElement> {
   name: string;
   //onClick: React.MouseEventHandler<SVGElement>;
 }
+
 // 知识点：React+typescript  typescrpt 泛型（类型接受一个参数）
 const Icon: React.FunctionComponent<IconProps> = ({
   className,
