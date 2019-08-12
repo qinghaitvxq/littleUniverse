@@ -8,8 +8,16 @@ const fn: React.MouseEventHandler = e => {
 };
 ReactDOM.render(
   <div>
-    {/* <Icon name="wechat" /> */}
-    <Icon name="donuts" onClick={fn} />
+    <Icon
+      name="donuts"
+      onMouseEnter={() => {
+        console.log("enter");
+      }}
+      onMouseLeave={() => {
+        console.log("leave");
+      }}
+      onClick={fn}
+    />
   </div>,
   document.getElementById("root")
 );

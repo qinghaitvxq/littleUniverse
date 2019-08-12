@@ -3,17 +3,21 @@ import React from "react";
 // import "../icons/donuts.svg";
 import "./importIcons";
 import "./icon.scss";
+import classnames from "./helpers/classnames";
 
-interface IconProps {
+interface IconProps extends React.SVGAttributes<SVGElement> {
   name: string;
-  onClick: (e: React.MouseEvent) => void;
-  //onClick: React.MouseEventHandler<SVGAElement>;
+  //onClick: React.MouseEventHandler<SVGElement>;
 }
 // 知识点：React+typescript  typescrpt 泛型（类型接受一个参数）
-const Icon: React.FunctionComponent<IconProps> = props => {
+const Icon: React.FunctionComponent<IconProps> = ({
+  className,
+  name,
+  ...restProps
+}) => {
   return (
-    <svg className="universe-icon" onClick={props.onClick}>
-      <use xlinkHref={`#${props.name}`} />
+    <svg className={classnames("universe-icon", className)} {...restProps}>
+      <use xlinkHref={`#${name}`} />
     </svg>
   );
 };
