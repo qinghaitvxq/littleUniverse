@@ -3,7 +3,7 @@ import React from "react";
 // import "../icons/donuts.svg";
 import "./importIcons";
 import "./icon.scss";
-import classnames from "./helpers/classnames";
+import classnames from "../helpers/classnames";
 
 interface IconProps extends React.SVGAttributes<SVGElement> {
   name: string;
