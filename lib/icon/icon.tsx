@@ -2,7 +2,8 @@ import React from "react";
 // import "../icons/wechat.svg";
 // import "../icons/donuts.svg";
 import "./importIcons";
-import "./icon.scss";
+//import "./icon.scss";
+import styles from "./icon.scss";
 import classnames from "../helpers/classnames";
 
 interface IconProps extends React.SVGAttributes<SVGElement> {
@@ -17,7 +18,7 @@ const Icon: React.FunctionComponent<IconProps> = ({
   ...restProps
 }) => {
   return (
-    <svg className={classnames("universe-icon", className)} {...restProps}>
+    <svg className={classnames(styles.icon, className)} {...restProps}>
       <use xlinkHref={`#${name}`} />
     </svg>
   );
