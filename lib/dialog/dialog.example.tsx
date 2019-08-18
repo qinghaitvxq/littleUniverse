@@ -1,13 +1,19 @@
 import React, { useState } from "react";
-import Dialog,{alert} from "./dialog";
+import Dialog,{alert,confirm,modal} from "./dialog";
 
 
 export default function() {
   const [x, setX] = useState(false);
   const [y, setY]=useState(false);
+  const openModal=()=>{
+    const close=modal(<h1>
+      你好
+      <button onClick={()=>close()}>close</button>
+      </h1>)
+  }
   return (
     <div>
-    <div  style={{border:'solid 1px red'}}>
+    <div>
       <h1>Example 1</h1>
       <button onClick={() => setX(!x)}>click</button>
       <Dialog visible={x} 
@@ -39,8 +45,14 @@ export default function() {
      </Dialog>
    </div>
    <div>
-     <h2>Example 3</h2>
+     <h1>Example 3</h1>
      <button onClick={()=>alert('hello')}>alert</button>
+     <button onClick={()=>confirm('test',()=>{ console.log('click yes')},()=>{console.log('click no')})}>confirm</button>
+   </div>
+   <div>
+     <h1>Example 4</h1>
+     <button onClick={openModal}>modal</button>
+    
    </div>
    </div>
   );
