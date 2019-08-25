@@ -1,0 +1,68 @@
+$pageBackgroundColor: #eeeeee;
+$mainColor: #4285f4;
+$borderColor: #eeeeee;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::before {
+  box-sizing: border-box;
+}
+*::after {
+  box-sizing: border-box;
+}
+ul ol {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.example {
+  background: white;
+}
+.siteHeader {
+  padding: 16px;
+  background: $pageBackgroundColor;
+  font-size: 32px;
+}
+.logo {
+  color: $mainColor;
+}
+.siteAside {
+  h2 {
+    padding: 8px;
+    font-size: 18px;
+  }
+  ul {
+    padding: 8px;
+    min-width: 12em;
+    > li {
+      padding: 8px 0;
+      a {
+        color: $mainColor;
+      }
+    }
+  }
+}
+.siteContent {
+  padding-top: 16px;
+}
+.siteFooter {
+  text-align: center;
+  font-size: 12px;
+  color: #666;
+  padding: 16px 0;
+  border-top: solid 1px $borderColor;
+  margin-top: 8px;
+}
