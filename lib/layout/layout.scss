@@ -1,0 +1,16 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  .layout {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    //border: solid 1px blue;
+  }
+  &.hasAside {
+    flex-direction: row;
+    .layout {
+      flex-direction: column;
+    }
+  }
+}

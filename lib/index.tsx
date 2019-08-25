@@ -24,7 +24,8 @@
 
 import "./index.scss";
 import Icon from "./icon/icon";
-export { Icon };
+import Dialog from './dialog/dialog';
+export { Icon,Dialog };
 
 // 建轮子步骤  借鉴同行
 
