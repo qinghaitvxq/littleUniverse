@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/local/bin/node /Users/yunxi/.yarn/bin/yarn.js publish
+  /usr/local/bin/node /Users/yunxi/.yarn/bin/yarn.js add -D prism-react-render
 
 PATH: 
   /Users/yunxi/.yarn/bin:/Users/yunxi/.config/yarn/global/node_modules/.bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
@@ -8,28 +8,28 @@ Yarn version:
   1.13.0
 
 Node version: 
-  8.9.3
+  10.16.3
 
 Platform: 
   darwin x64
 
 Trace: 
-  Error: http://r.cnpmjs.org/-/user/org.couchdb.user:mercy_universe: [conflict] User mercy_universe already exists
+  Error: http://r.cnpmjs.org/prism-react-render: [not_found] document not found
       at Request.params.callback [as _callback] (/Users/yunxi/.yarn/lib/cli.js:66255:18)
       at Request.self.callback (/Users/yunxi/.yarn/lib/cli.js:129397:22)
-      at emitTwo (events.js:126:13)
-      at Request.emit (events.js:214:7)
+      at Request.emit (events.js:198:13)
       at Request.<anonymous> (/Users/yunxi/.yarn/lib/cli.js:130369:10)
-      at emitOne (events.js:116:13)
-      at Request.emit (events.js:211:7)
-      at IncomingMessage.<anonymous> (/Users/yunxi/.yarn/lib/cli.js:130291:12)
-      at Object.onceWrapper (events.js:313:30)
-      at emitNone (events.js:111:20)
+      at Request.emit (events.js:198:13)
+      at Gunzip.<anonymous> (/Users/yunxi/.yarn/lib/cli.js:130291:12)
+      at Object.onceWrapper (events.js:286:20)
+      at Gunzip.emit (events.js:203:15)
+      at endReadableNT (_stream_readable.js:1145:12)
+      at process._tickCallback (internal/process/next_tick.js:63:19)
 
 npm manifest: 
   {
     "name": "tvxquniverse",
-    "version": "1.0.6",
+    "version": "1.1.0",
     "description": "",
     "main": "index.js",
     "files": [
@@ -70,6 +70,7 @@ npm manifest:
       "jest": "^24.8.0",
       "jest-junit": "^7.0.0",
       "node-sass": "^4.12.0",
+      "raw-loader": "^3.1.0",
       "react-test-renderer": "16.8.4",
       "sass-loader": "^7.1.0",
       "style-loader": "^1.0.0",
@@ -6523,6 +6524,14 @@ Lockfile:
       http-errors "1.7.2"
       iconv-lite "0.4.24"
       unpipe "1.0.0"
+  
+  raw-loader@^3.1.0:
+    version "3.1.0"
+    resolved "http://r.cnpmjs.org/raw-loader/download/raw-loader-3.1.0.tgz#5e9d399a5a222cc0de18f42c3bc5e49677532b3f"
+    integrity sha1-Xp05mloiLMDeGPQsO8XklndTKz8=
+    dependencies:
+      loader-utils "^1.1.0"
+      schema-utils "^2.0.1"
   
   rc@^1.2.7:
     version "1.2.8"
