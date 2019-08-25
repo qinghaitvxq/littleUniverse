@@ -40,20 +40,28 @@ a {
   color: $mainColor;
 }
 .siteAside {
+  margin-right: 15px;
   h2 {
     padding: 8px;
     font-size: 18px;
   }
   ul {
-    padding: 8px;
     min-width: 12em;
     > li {
-      padding: 8px 0;
       a {
-        color: $mainColor;
+        color: #333;
+        display: block;
+        padding: 8px 16px;
+        &:hover {
+          color: $mainColor;
+        }
       }
     }
   }
+}
+.active {
+  color: white !important;
+  background: $mainColor;
 }
 .siteContent {
   padding-top: 16px;
