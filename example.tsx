@@ -3,13 +3,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { HashRouter as Router, Route, NavLink } from "react-router-dom";
-import IconExample from "./lib/icon/icon.example";
+import IconDemo from "./lib/icon/icon.demo";
 import DialogExample from "./lib/dialog/dialog.example";
 import LayoutExample from "./lib/layout/layout.example";
 import { Header, Content, Aside, Footer, Layout } from "./lib/layout/layout";
 import styles from "./example.scss";
-// import './lib/index.scss';
-//import { Header, Content, Aside, Footer, Layout } from "./lib/layout/layout";
+
+// const test = require("!!raw-loader!./lib/icon/icon.example.tsx");
+// console.log(test.default);
 
 ReactDOM.render(
   <Router>
@@ -40,7 +41,7 @@ ReactDOM.render(
             </ul>
           </Aside>
           <Content className={styles.siteContent}>
-            <Route path="/icon" component={IconExample} />
+            <Route path="/icon" component={IconDemo} />
             <Route path="/dialog" component={DialogExample} />
             <Route path="/layout" component={LayoutExample} />
           </Content>
