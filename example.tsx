@@ -47,7 +47,11 @@ ReactDOM.render(
           </Content>
         </Layout>
 
-        <Footer className={styles.siteFooter}>&copy; 张起灵</Footer>
+        <Footer className={styles.siteFooter}>
+          &copy; 张起灵
+          <div>我看过人间无数的奇景，我有着世界上最神奇最有故事的伙伴</div>
+          <div>我们在峭壁高歌，在雪山诵经，在戈壁对酒，在海上看月</div>
+        </Footer>
       </Layout>
 
       <div />
