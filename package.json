@@ -16,5 +16,13 @@
   "bugs": {
     "url": "https://github.com/qinghaitvxq/littleUniverse/issues"
   },
-  "homepage": "https://github.com/qinghaitvxq/littleUniverse#readme"
+  "homepage": "https://github.com/qinghaitvxq/littleUniverse#readme",
+  "dependencies": {
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^4.3.0",
+    "webpack-dev-server": "^3.11.0"
+  }
 }
