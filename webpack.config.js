@@ -9,6 +9,17 @@ module.exports = {
     filename: "little.js",
     libraryTarget: "umd",
   },
+  module: {
+    rules: [
+      {
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader",
+        },
+      },
+    ],
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: "index.html",
