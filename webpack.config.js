@@ -18,6 +18,11 @@ module.exports = {
           loader: "babel-loader",
         },
       },
+      {
+        test: /\.svg$/,
+        loader: "svg-sprite-loader",
+        options: {},
+      },
     ],
   },
   plugins: [
