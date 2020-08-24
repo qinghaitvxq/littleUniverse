@@ -1,12 +1,14 @@
 {
-  "name": "littleUniverse",
-  "version": "1.0.0",
+  "name": "little-universe",
+  "version": "1.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "./dist/little.js",
+  "files": [
+    "/dist"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server",
-    "build": "webpack  "
+    "start": "webpack-dev-server --config webpack.config.dev.js",
+    "build": "webpack --config webpack.config.pro.js "
   },
   "repository": {
     "type": "git",
