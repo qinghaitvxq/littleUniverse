@@ -1,10 +1,18 @@
 const path = require("path");
 
 module.exports = {
-  entry: "./lib/index.js",
+  //entry: "./lib/index.js",
+  entry: {
+    Icon: "./lib/Icon/index.js",
+  },
+  // output: {
+  //   path: path.resolve(__dirname, "dist"),
+  //   filename: "little.js",
+  //   libraryTarget: "umd",
+  // },
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "little.js",
+    filename: "[name]/index.js",
     libraryTarget: "umd",
   },
   module: {

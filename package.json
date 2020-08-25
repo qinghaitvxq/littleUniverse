@@ -1,10 +1,11 @@
 {
   "name": "little-universe",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
-  "main": "./dist/little.js",
+  "main": "./lib/index.js",
   "files": [
-    "/dist"
+    "/dist",
+    "/lib"
   ],
   "scripts": {
     "start": "webpack-dev-server --config webpack.config.dev.js",
