@@ -10,10 +10,7 @@
   "scripts": {
     "start": "webpack-dev-server --config webpack.config.dev.js",
     "build": "webpack --config webpack.config.pro.js ",
-    "devBuild": "webpack --config webpack.config.dev.js",
-    "docz:dev": "docz dev",
-    "docz:build": "docz build",
-    "docz:serve": "docz build && docz serve"
+    "devBuild": "webpack --config webpack.config.dev.js"
   },
   "repository": {
     "type": "git",
