@@ -1,15 +1,13 @@
 const path = require("path");
 
 module.exports = {
-  //entry: "./lib/index.js",
   entry: {
+    index: "./lib/index.js",
     Icon: "./lib/Icon/index.js",
+    DrawImageCenter: "./lib/DrawImageCenter/index.js",
+    SelectAll: "./lib/SelectAll/index.js",
+    // Test: "./lib/Test/index.js",
   },
-  // output: {
-  //   path: path.resolve(__dirname, "dist"),
-  //   filename: "little.js",
-  //   libraryTarget: "umd",
-  // },
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "[name]/index.js",
@@ -32,6 +30,10 @@ module.exports = {
       {
         test: /\.s([ac])ss$/,
         use: ["style-loader", "css-loader", "sass-loader"],
+      },
+      {
+        test: /\.css$/,
+        use: ["style-loader", "css-loader"],
       },
     ],
   },

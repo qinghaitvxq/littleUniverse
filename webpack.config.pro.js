@@ -1,4 +1,4 @@
-const base = require("./webpack.config");
+const base = require("./webpack.config.base");
 
 module.exports = Object.assign({}, base, {
   mode: "production",
