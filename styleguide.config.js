@@ -3,4 +3,5 @@ module.exports = {
   webpackConfig: Object.assign({}, require("./webpack.config.base.js"), {
     /* Custom config options */
   }),
+  ignore: ["lib/index.js"],
 };

@@ -11,7 +11,8 @@
     "start": "webpack-dev-server --config webpack.config.dev.js",
     "build": "webpack --config webpack.config.pro.js ",
     "devBuild": "webpack --config webpack.config.dev.js",
-    "docs": "styleguidist server"
+    "sg": "styleguidist server",
+    "sg:build": "styleguidist build"
   },
   "repository": {
     "type": "git",
