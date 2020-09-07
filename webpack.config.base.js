@@ -29,7 +29,20 @@ module.exports = {
       },
       {
         test: /\.s([ac])ss$/,
-        use: ["style-loader", "css-loader", "sass-loader"],
+        use: [
+          "style-loader",
+          "css-loader",
+          "sass-loader",
+          {
+            loader: "sass-resources-loader",
+            options: {
+              resources: [
+                path.resolve(__dirname, "lib/commonStyle/variable.scss"),
+                path.resolve(__dirname, "lib/commonStyle/common.scss"),
+              ],
+            },
+          },
+        ],
       },
       {
         test: /\.css$/,

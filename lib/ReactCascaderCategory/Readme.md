@@ -1,0 +1,3 @@
+```js
+<ReactCascaderCategory name="ghost" />
+```

@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  // color: #dddbdd;
+}
+div {
+  box-sizing: border-box;
+}
+[contentEditable="true"]:empty:not(:focus):before {
+  content: attr(placeholder);
+  position: absolute;
+  color: gray;
+  line-height: 30px;
+  width: 180px;
+  background-color: transparent;
+  font-size: 14px;
+}
