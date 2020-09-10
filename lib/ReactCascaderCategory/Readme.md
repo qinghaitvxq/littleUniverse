@@ -75,15 +75,10 @@ const treeData = [
   },
 ];
 
-const onChangeHandler = (val) => {
-  if (value.findIndex((x) => x === val) !== -1) {
-    //删除
-    const newVal = value.filter((x) => x !== val);
-    setValue(newVal);
-  } else {
-    //新增
-    setValue([...value, val]);
-  }
+const onChangeHandler = (newValue, current) => {
+  console.log("new control value", newValue);
+  console.log("current changeKey", current);
+  setValue(newValue);
 };
 
 <ReactCascaderCategory
