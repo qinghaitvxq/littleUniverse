@@ -12,7 +12,8 @@
     "build": "webpack --config webpack.config.pro.js ",
     "devBuild": "webpack --config webpack.config.dev.js",
     "sg": "styleguidist server",
-    "sg:build": "styleguidist build"
+    "sg:build": "styleguidist build",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -44,6 +45,7 @@
     "babel-loader": "^8.1.0",
     "css-loader": "^4.2.1",
     "html-webpack-plugin": "^4.3.0",
+    "jest": "^26.4.2",
     "sass-loader": "^9.0.3",
     "sass-resources-loader": "^2.1.0",
     "style-loader": "^1.2.1",
