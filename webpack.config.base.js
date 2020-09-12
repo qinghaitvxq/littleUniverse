@@ -3,10 +3,10 @@ const path = require("path");
 module.exports = {
   entry: {
     index: "./lib/index.js",
-    Icon: "./lib/Icon/index.js",
+    //Icon: "./lib/Icon/index.js",
     DrawImageCenter: "./lib/DrawImageCenter/index.js",
     SelectAll: "./lib/SelectAll/index.js",
-    // Test: "./lib/Test/index.js",
+    ReactCascaderCategory: "./lib/ReactCascaderCategory/index.js",
   },
   output: {
     path: path.resolve(__dirname, "dist"),
